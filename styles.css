@@ -1,5 +1,5 @@
 :root {
---foft-orange: hsl(35, 77%, 62%);
+--soft-orange: hsl(35, 77%, 62%);
 --soft-red: hsl(5, 85%, 63%);
 --off-white: hsl(36, 100%, 99%);
 --grayish-blue: hsl(233, 8%, 79%);
@@ -15,6 +15,30 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    padding: 3.5rem 4.5rem;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none; 
+    gap: 2rem;
+}
+
+.nav-list-item {
+    font-weight: 400;
+    color: var(--grayish-blue);
+    cursor: pointer;
+}
+
+.nav-list-item:hover {
+    color: var(--soft-orange)
 }
 
 .attribution {
