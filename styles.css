@@ -43,7 +43,7 @@ main {
 .nav-list-item {
     font-weight: 400;
     color: var(--dark-grayish-blue);
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-list-item:hover {
@@ -125,12 +125,15 @@ align-self: self-end;
 }
 
 .new-article-title {
-    color: var(--off-white);
-    cursor: pointer;
     padding: 1.5rem 0 0.5rem 0;
 }
 
-.new-article-title:hover {
+.new-article-title a {
+    color: var(--off-white);
+    text-decoration: none;
+}
+
+.new-article-title a:hover {
     color: var(--soft-orange);
 }
 
@@ -173,9 +176,17 @@ align-self: self-end;
 }
 
 .other-articles-header {
+    margin-bottom: 0.5rem;
+}
+
+.other-articles-header a {
     color: var(--very-dark-blue);
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.other-articles-header a:hover {
+    color: var(--soft-red);
 }
 
 .other-articles-text {
