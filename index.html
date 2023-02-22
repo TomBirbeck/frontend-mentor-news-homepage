@@ -12,71 +12,88 @@
 
 </head>
 <body>
+  <header class="nav-section">
+    <img src="./assets/images/logo.svg" alt="">
+    <nav class="navbar">
+      <ol class="nav-list">
+        <li class="nav-list-item">
+          Home
+        </li>
+        <li class="nav-list-item">
+          New
+        </li>
+        <li class="nav-list-item">
+          Popular
+        </li>
+        <li class="nav-list-item">
+          Trending
+        </li>
+        <li class="nav-list-item">
+          Categories
+        </li>
+      </ol>
+    </nav>
+  </header>
   <main>
-    <section class="nav-section">
-      <img src="./assets/images/logo.svg" alt="">
-      <nav class="navbar">
-        <ol class="nav-list">
-          <li class="nav-list-item">
-            Home
+    <h1 class="visually-hidden">Main content</h1>
+    <div class="main-page">
+      <div class="featured">
+        <h1 class="visually-hidden">Featured article</h1>
+        <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="featured-image"/>
+        <div class="featured-story">
+        <h2 class="featured-heading">The Bright Future of Web 3.0?</h2>
+        <div class="featured-story-text-area">
+          <p class="featured-story-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>
+          <button class="featured-story-button">READ MORE</button>
+        </div>
+    </div>
+      </div>
+      <div class="new-articles">
+        <h2 class="new-articles-header">New</h2>
+        <ul class="new-article-list">
+          <li>
+            <h3 class="new-article-title">Hydrogen VS Electric Cars</h3>
+            <p class="new-article-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
           </li>
-          <li class="nav-list-item">
-            New
+          <li>
+            <h3 class="new-article-title">The Downsides of AI Artistry</h3>
+            <p class="new-article-text">What are the possible adverse effects of on-demand AI image generation?</p>
           </li>
-          <li class="nav-list-item">
-            Popular
+          <li>
+            <h3 class="new-article-title">Is VC Funding Drying Up?</h3>
+            <p class="new-article-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
           </li>
-          <li class="nav-list-item">
-            Trending
+        </ul>
+      </div>
+      <div class="other-articles">
+        <h1 class="visually-hidden">Other articles</h1>
+        <ol>
+          <li>
+            <img class="other-articles-image" src="./assets/images/image-retro-pcs.jpg" alt=""/>
+            <div class="other-articles-text-container">
+              <p class="other-articles-number">01</p>
+              <p class="other-articles-header">Reviving Retro PCs</p>
+              <p class="other-articles-text">What happens when old PCs are given modern upgrades?</p>
+            </div>
           </li>
-          <li class="nav-list-item">
-            Categories
+          <li>
+            <img class="other-articles-image"  src="./assets/images/image-top-laptops.jpg" alt=""/>
+            <div class="other-articles-text-container">
+              <p class="other-articles-number">02</p>
+              <p class="other-articles-header">Top 10 Laptops of 2022</p>
+              <p class="other-articles-text">Our best picks for various needs and budgets.</p>
+            </div>
+          </li>
+          <li>
+            <img class="other-articles-image" src="./assets/images/image-gaming-growth.jpg" alt=""/>
+            <div class="other-articles-text-container">
+              <p class="other-articles-number">03</p>
+              <p class="other-articles-header">The Growth of Gaming</p>
+              <p class="other-articles-text"> How the pandemic has sparked fresh opportunities.</p>
+            </div>
           </li>
         </ol>
-      </nav>
-    </section>
-    <div class="main-page">
-          <img src="./assets/images/image-web-3-desktop.jpg" alt="" class="main-image"/>
-      <div class="new-stories">
-        <h2 class="new-stories-header">New</h2>
-        <h3 class="new-story-title">Hydrogen VS Electric Cars</h3>
-        <p class="new-story-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
-        <hr>
-        <h3 class="new-story-title">The Downsides of AI Artistry</h3>
-        <p class="new-story-text">What are the possible adverse effects of on-demand AI image generation?</p>
-        <hr>
-        <h3 class="new-story-title">Is VC Funding Drying Up?</h3>
-        <p class="new-story-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
-      </div>
-      <h1 class="main-heading">The Bright Future of Web 3.0?</h1>
-      <div class="main-story">
-        <p class="main-story-text">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-          But is it really fulfilling its promise?</p>
-        <button class="main-story-button">READ MORE</button>
-      </div>
-        <div class="bottom-story-one">
-          <img class="bottom-story-image" src="./assets/images/image-retro-pcs.jpg" alt=""/>
-          <div class="bottom-story-text-container">
-            <p class="bottom-story-number">01</p>
-            <p class="bottom-story-header">Reviving Retro PCs</p>
-            <p class="bottom-story-text">What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-        <div class="bottom-story-two">
-          <img class="bottom-story-image"  src="./assets/images/image-top-laptops.jpg" alt=""/>
-          <div class="bottom-story-text-container">
-            <p class="bottom-story-number">02</p>
-            <p class="bottom-story-header">Top 10 Laptops of 2022</p>
-            <p class="bottom-story-text">Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-        <div class="bottom-story-three">
-          <img class="bottom-story-image" src="./assets/images/image-gaming-growth.jpg" alt=""/>
-          <div class="bottom-story-text-container">
-            <p class="bottom-story-number">03</p>
-            <p class="bottom-story-header">The Growth of Gaming</p>
-            <p class="bottom-story-text"> How the pandemic has sparked fresh opportunities.</p>
-          </div>
         </div>
     </div>
   </main>  
