@@ -43,7 +43,6 @@ body {
 
 .main-page {
     display: grid;
-    background-color: aqua;
     grid-template-areas: 
             "a a b"
             "c d b"
@@ -61,38 +60,85 @@ body {
 
 .new-stories {
     grid-area: b;
-    background-color: blueviolet;
+    background-color: var(--very-dark-blue);
+    padding: 1.5rem 1rem;
+}
+
+.new-stories-header {
+    color: var(--soft-orange);
+}
+
+.new-story-title {
+    color: var(--off-white);
+    cursor: pointer;
+    padding: 1.5rem 0 0.5rem 0;
+}
+
+.new-story-title:hover {
+    color: var(--soft-orange);
+}
+
+.new-story-text{
+    color: var(--grayish-blue);
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .sub-heading {
     grid-area: c;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--very-dark-blue);
 }
 
 .sub-story {
     grid-area: d;
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.sub-story-text {
+    color: var(--dark-grayish-blue);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sub-story-button {
+width: 50%;
+background-color: var(--soft-red);
+color: var(--off-white);
+font-weight: 700;
+border: none;
+height: 2.5rem;
+align-self: self-end;
+}
+
+.sub-story-button:hover {
+    background-color: var(--very-dark-blue);
 }
 
 .bottom-story-one {
     grid-area: e;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bottom-story-two {
     grid-area: f;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bottom-story-three {
     grid-area: g;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .bottom-story-image {
     width: 100%;
-    height: 14rem;
+    height: 10rem;
 }
 
 /* .bottom-story-text-container {
