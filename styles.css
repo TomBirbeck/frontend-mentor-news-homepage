@@ -47,7 +47,7 @@ main {
 }
 
 .nav-list-item:hover {
-    color: var(--soft-orange)
+    color: var(--soft-red)
 }
 
 .main-page {
@@ -69,14 +69,16 @@ main {
 }
 
 .featured-heading {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     color: var(--very-dark-blue);
 }
 
 .featured-story {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 1rem;
 }
 
 .featured-story-text {
@@ -86,7 +88,7 @@ main {
 }
 
 .featured-story-text-area {
-    padding-top: 0.5rem;
+    padding-top: 1.5rem;
     display: grid;
     row-gap: 1.5rem;
 }
@@ -97,7 +99,8 @@ background-color: var(--soft-red);
 color: var(--off-white);
 font-weight: 700;
 border: none;
-height: 2.5rem;
+height: 3rem;
+letter-spacing: 0.3rem;
 align-self: self-end;
 }
 
@@ -108,16 +111,16 @@ align-self: self-end;
 .new-articles {
     grid-area: new;
     background-color: var(--very-dark-blue);
-    margin-top: 1.2rem;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem 1.5rem 0rem 1.5rem;
 }
 
 .new-articles-header {
     color: var(--soft-orange);
+    font-size: 2.5rem;
 }
 
 .new-article-list li {
-    border-bottom: 2px solid var(--off-white);
+    border-bottom: 2px solid var(--grayish-blue);
 }
 
 .new-article-list li:last-child {
@@ -125,7 +128,7 @@ align-self: self-end;
 }
 
 .new-article-title {
-    padding: 1.5rem 0 0.5rem 0;
+    padding: 2rem 0 1.5rem 0;
 }
 
 .new-article-title a {
@@ -151,7 +154,8 @@ align-self: self-end;
 
 .other-articles ol {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.2rem;
 }
 
 .other-articles li {
@@ -166,6 +170,7 @@ align-self: self-end;
 
 .other-articles-text-container {
     grid-column: 2/ span 2;
+    padding-right: 1rem;
 }
 
 .other-articles-number {
